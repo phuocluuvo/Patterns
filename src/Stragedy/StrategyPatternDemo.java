@@ -5,6 +5,7 @@ public class StrategyPatternDemo {
 		
 		int a = 12;
 		int b = 5;
+		
 		Context context = new Context(new OperationAdd());
 		System.out.println(a + "+" + b + "= " + context.executeStrategy(a, b));
 		context = new Context(new OperationSubstract());
