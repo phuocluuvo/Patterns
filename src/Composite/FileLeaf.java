@@ -1,17 +1,23 @@
 package Composite;
 
-public class FileLeaf implements FileComponent{
+public class FileLeaf implements FileComponent {
+	private String name;
+	private long size;
+
+	public FileLeaf(String name, long size) {
+		super();
+		this.name = name;
+		this.size = size;
+	}
 
 	@Override
 	public long totalSize() {
-		// TODO Auto-generated method stub
-		return 0;
+		return size;
 	}
 
 	@Override
 	public void showProperty() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("FileLeaf [name=" + name + ", size=" + size + "]");
 	}
 
 }
